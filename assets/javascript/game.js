@@ -27,10 +27,12 @@ function resetGame() {
 //Updates the score after a crystal is clicked; val is the value of the clicked crystal
 function updateScore(val) {
     score = score + val;
+    $("#score").text(score);
+    console.log(score);
 }
 
 //Updates wins and losses
-function updateWinLoss {
+function updateWinLoss() {
     if (score === targetVal) {
         wins++;
         resetGame();
@@ -51,22 +53,23 @@ resetGame();
 $("#crys1").on("click", function() {
     updateScore(crys1Val);
     updateWinLoss;
-};
+});
 
 $("#crys2").on("click", function() {
     updateScore(crys2Val);
     updateWinLoss;
-};
+});
 
 $("#crys3").on("click", function() {
     updateScore(crys3Val);
     updateWinLoss;
-};
+});
 
 $("#crys4").on("click", function() {
     updateScore(crys4Val);
     updateWinLoss;
-};
+});
+
 
 
 
