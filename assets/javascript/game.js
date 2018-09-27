@@ -29,5 +29,46 @@ function updateScore(val) {
     score = score + val;
 }
 
+//Updates wins and losses
+function updateWinLoss {
+    if (score === targetVal) {
+        wins++;
+        resetGame();
+        return;
+    }
+    else if (score >= targetVal) {
+        losses++;
+        resetGame();
+        return;
+    }
+}
+
+//MAIN PROCESS
+
+//calls game start/reset function
+resetGame();
+
+$("#crys1").on("click", function() {
+    updateScore(crys1Val);
+    updateWinLoss;
+};
+
+$("#crys2").on("click", function() {
+    updateScore(crys2Val);
+    updateWinLoss;
+};
+
+$("#crys3").on("click", function() {
+    updateScore(crys3Val);
+    updateWinLoss;
+};
+
+$("#crys4").on("click", function() {
+    updateScore(crys4Val);
+    updateWinLoss;
+};
+
+
+
 
 
