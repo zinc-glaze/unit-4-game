@@ -13,10 +13,12 @@ var losses = 0;
 
 //Initializes each new game
 function resetGame() {
-    //resets score to 0
+    //resets score to 0 and writes to html
     score = 0;
-    //chooses random target value between 19-120
+    $("#score").text(score);
+    //chooses random target value between 19-120 and writes to html
     targetVal = Math.floor(Math.random() * 101) + 19;
+    $("#target").text(targetVal);
     //chooses random value for each crystal between 1-12
     crys1Val = Math.floor(Math.random() * 11) + 1;
     crys2Val = Math.floor(Math.random() * 11) + 1;
@@ -28,18 +30,19 @@ function resetGame() {
 function updateScore(val) {
     score = score + val;
     $("#score").text(score);
-    console.log(score);
 }
 
 //Updates wins and losses
 function updateWinLoss() {
     if (score === targetVal) {
         wins++;
+        $("#win-count").text(wins);
         resetGame();
         return;
     }
     else if (score >= targetVal) {
         losses++;
+        $("#loss-count").text(losses);
         resetGame();
         return;
     }
@@ -50,24 +53,25 @@ function updateWinLoss() {
 //calls game start/reset function
 resetGame();
 
+//on click, call these functions
 $("#crys1").on("click", function() {
     updateScore(crys1Val);
-    updateWinLoss;
+    updateWinLoss();
 });
 
 $("#crys2").on("click", function() {
     updateScore(crys2Val);
-    updateWinLoss;
+    updateWinLoss();
 });
 
 $("#crys3").on("click", function() {
     updateScore(crys3Val);
-    updateWinLoss;
+    updateWinLoss();
 });
 
 $("#crys4").on("click", function() {
     updateScore(crys4Val);
-    updateWinLoss;
+    updateWinLoss();
 });
 
 

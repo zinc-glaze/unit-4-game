@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/congruent_pentagon.png");
+}
+
+header {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+img {
+    height: 150px;
+}
+
+#left-panel {
+    float: left;
+}
+
+aside {
+    float: right;
+}
