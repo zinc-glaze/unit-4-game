@@ -19,6 +19,9 @@ function resetGame() {
     //chooses random target value between 19-120 and writes to html
     targetVal = Math.floor(Math.random() * 101) + 19;
     $("#target").text(targetVal);
+    //writes current win/loss count
+    $("#win-count").text(wins);
+    $("#loss-count").text(losses);
     //chooses random value for each crystal between 1-12
     crys1Val = Math.floor(Math.random() * 11) + 1;
     crys2Val = Math.floor(Math.random() * 11) + 1;

@@ -3,29 +3,102 @@ body {
 }
 
 header {
-    background-color: whitesmoke;
+    font-family: 'Kumar One Outline', cursive;
+    color: #947;
+    background-color: #f6ffe7;
     text-align: center;
+    padding: 25px 20px 20px 20px;
+    margin-bottom: 15px;
+    border-bottom: 5px solid #c9fcdc;
 }
 
 main {
     background-color: white;
-    width: 50%;
+    width: 1100px;
+    height: 500px;
+    border: 3px solid #c9fcdc;
     margin: auto;
     overflow: auto;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 65px;
+}
+
+h2 {
+    float: left;
+    font-size: 40px;
+}
+
+h3 {
+    float: right;
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+h4 {
+    font-size: 32px;
 }
 
 img {
-    height: 150px;
+    height: 140px;
+    opacity: .7;
+}
+
+#status-bar {
+    margin: 15px 15px 35px;
+    padding: 20px;
+    font-family: 'Uncial Antiqua', cursive;
+    color: #947;
+    text-align: center;
+    background-color: #fbfff5;
+    border: 1px solid #c9fcdc;
+    overflow: auto;
+    clear: both;
 }
 
 #left-panel {
     float: left;
+    width: 725px;
+}
+
+#crystals {
+    clear: left;
+    text-align: center;
+    margin: 0px 25px 35px;
+}
+
+#current-score {
+    margin: 15px 15px 25px;
+    padding: 20px;
+    font-family: 'Uncial Antiqua', cursive;
+    color: #947;
+    text-align: center;
+    background-color: #fbfff5;
+    border: 1px solid #c9fcdc;
+    overflow: auto;
+    clear: both;
 }
 
 aside {
     float: right;
+    width: 275px;
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Metamorphous', cursive;
+    color: #947;
+    background-color: #fbfff5;
+    border: 1px solid #c9fcdc;
+    overflow: auto;
 }
+
+p {
+    margin-bottom: 10px;
+}
+
+#target, #win-count, #loss-count, #score {
+    font-family: 'Metamorphous', cursive;
+    color: #947;
+    font-size: 50px;
+}
+
