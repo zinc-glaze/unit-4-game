@@ -31,4 +31,4 @@ The game should meet the following requirements:
 
 Future development of this game will add an improved "You Win/Lose!" message.  Ideally, the message would display for a few seconds (during which time game play would be locked). After the message disappears, the game would restart.
 
-I would also like to add some jQuery animation to the images on each click to make the game a bit more dynamic.
+I would also like to add some jQuery animation to the images on each click to make the game a bit more dynamic, and shuffle the "crystal" images each game for more variety.
