@@ -41,12 +41,14 @@ $(document).ready(function() {
     function updateWinLoss() {
         if (score === targetVal) {
             wins++;
+            $("#won-lost").text("You Won!");
             $("#win-count").text(wins);
             resetGame();
             return;
         }
         else if (score >= targetVal) {
             losses++;
+            $("#won-lost").text("You Lost!");
             $("#loss-count").text(losses);
             resetGame();
             return;
