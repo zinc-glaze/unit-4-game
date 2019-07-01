@@ -1,10 +1,20 @@
-# unit-4-game
-## Zeke Graves jQuery Homework
+# Crystal Collector Game
+## UNC Coding Bootcamp jQuery Homework #4  10-2-2018
 
 This game is a simple "gem collector" type game where the user has to reach a target points value without exceeding it. 
 The user accumulates points by clicking on one of the four images, which have points randomly assigned to them.
 
-The game should meet the following requirements:
+This app uses:
+* Javascript and jQuery for game logic and interactivity
+* HTML and CSS for layout and styling
+
+My deployed app can be viewed here: https://zinc-glaze.github.io/unit-4-game/
+
+### Screenshot
+
+![Krystal Kwest](screens/screencapture-zinc-glaze-github-io-unit-4-game-2019-06-27-19_12_06.png)
+
+The assignment specified the following requirements:
 
 * There will be four crystals displayed as buttons on the page.
 
@@ -29,6 +39,4 @@ The game should meet the following requirements:
 
 * Each crystal should have a random hidden value between 1 - 12.
 
-Future development of this game will add an improved "You Win/Lose!" message.  Ideally, the message would display for a few seconds (during which time game play would be locked). After the message disappears, the game would restart.
 
-I would also like to add some jQuery animation to the images on each click to make the game a bit more dynamic, and shuffle the "crystal" images each game for more variety.
